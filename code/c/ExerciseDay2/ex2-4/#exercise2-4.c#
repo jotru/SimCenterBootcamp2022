@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
 
 	// get dth from the first argument.  This is given in degrees!
 
-	double dth;
+	double dth = argv[1];
 
 	if (argc>1) {
 		dth = atof(argv[1]) ;
@@ -26,7 +26,7 @@ int main(int argc, char **argv) {
 
 	FILE *f_ptr;
 
-	f_ptr = fopen("fopen.c",fasdf);
+	f_ptr = ...
 
 	// define a data structure for a single entry in the file
 

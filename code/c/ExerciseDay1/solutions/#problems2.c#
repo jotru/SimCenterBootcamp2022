@@ -1,0 +1,37 @@
+// program to solve quadratic equation
+//        ax^2 + bx + c = 0
+//
+// soln: x = -b/2a +/- sqrt(b^2-4ac)/2a
+//
+// write a program to take 3 inputs and output the soln
+// deal with possible errors in input, i.e. b^2-4ac negative
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+int main(int argc, char **argv) {
+
+  if (argc != 4) {
+    printf("Usage: appName a b c\n");
+    exit(-1);
+  }
+
+  float sx  = atof(argv[1]);
+  float sy = atof(argv[2]);
+  float sz  = atof(argv[3]);
+  float theta = atof(argv[4])* M_PI/180;
+
+  float sn = sin(theta);
+  float cs = cos(theta);
+
+  float sxp = sx*cs*cs +sy*sn*sn +2*tau*cs*sn;
+  float syp = sx*sn*sn +sy *cs *cs +2*tau *cs *sn;
+  double taup = (sy-sx) *sn*cs +tau * (cs *cs -sn *sn)
+    
+    printf("sigma_x' = %12.61f\n",sxp);
+    printf("Sigma_y = %12.61f\n",syp);
+    printf("Tau_xy  = 12.61f\n",taup);
+  return 0;
+}
+
